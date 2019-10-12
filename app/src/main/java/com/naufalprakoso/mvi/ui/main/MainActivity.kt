@@ -1,7 +1,8 @@
-package com.naufalprakoso.mvi
+package com.naufalprakoso.mvi.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.naufalprakoso.mvi.R
 
 class MainActivity : AppCompatActivity() {
 
