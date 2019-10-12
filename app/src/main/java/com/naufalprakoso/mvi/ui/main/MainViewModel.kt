@@ -16,7 +16,7 @@ class MainViewModel : ViewModel() {
     private val _stateEvent: MutableLiveData<MainStateEvent> = MutableLiveData()
     private val _viewState: MutableLiveData<MainViewState> = MutableLiveData()
 
-    private val viewState: LiveData<MainViewState>
+    val viewState: LiveData<MainViewState>
         get() = _viewState
 
     val dataState: LiveData<DataState<MainViewState>> = Transformations
