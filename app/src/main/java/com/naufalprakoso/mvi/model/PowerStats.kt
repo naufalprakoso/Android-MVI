@@ -1,6 +1,6 @@
 package com.naufalprakoso.mvi.model
 
-class PowerStats(
+data class PowerStats(
     var intelligence: Int = 0,
     var strength: Int = 0,
     var speed: Int = 0,

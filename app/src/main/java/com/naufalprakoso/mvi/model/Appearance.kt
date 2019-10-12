@@ -1,6 +1,6 @@
 package com.naufalprakoso.mvi.model
 
-class Appearance(
+data class Appearance(
     var gender: String = "",
     var race: String = "",
     var height: List<String>,

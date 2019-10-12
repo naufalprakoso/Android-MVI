@@ -1,6 +1,6 @@
 package com.naufalprakoso.mvi.model
 
-class Images(
+data class Images(
     var xs: String = "",
     var sm: String = "",
     var md: String = "",

@@ -1,6 +1,6 @@
 package com.naufalprakoso.mvi.model
 
-class Biography(
+data class Biography(
     var fullName: String = "",
     var alterEgos: String = "",
     var aliases: List<String>,

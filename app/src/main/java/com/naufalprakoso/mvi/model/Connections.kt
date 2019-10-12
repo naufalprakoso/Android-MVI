@@ -1,6 +1,6 @@
 package com.naufalprakoso.mvi.model
 
-class Connections(
+data class Connections(
     var groupAffiliation: String = "",
     var relatives: String = ""
 )

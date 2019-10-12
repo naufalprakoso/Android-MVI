@@ -1,6 +1,6 @@
 package com.naufalprakoso.mvi.model
 
-class Character(
+data class Character(
     var id: Int = 0,
     var name: String = "",
     var slug: String = "",
