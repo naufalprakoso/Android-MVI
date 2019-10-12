@@ -46,5 +46,4 @@ class MainCharacterAdapter(
             itemView.setOnClickListener { listener(character.id) }
         }
     }
-
 }

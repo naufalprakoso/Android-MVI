@@ -5,7 +5,6 @@
     android:id="@+id/layout_parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
     android:fillViewport="true"
     android:orientation="vertical"
     tools:context=".ui.detail.CharacterDetailActivity">
@@ -43,12 +42,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_profile"
+            style="@style/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/img_hero"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
-            app:cardCornerRadius="8dp"
             app:cardElevation="16dp">
 
             <RelativeLayout
@@ -63,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="8dp"
-                    android:text="Information"
+                    android:text="@string/information"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -72,7 +71,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_information"
-                    android:text="Fullname"
+                    android:text="@string/fullname"
                     android:textStyle="bold" />
 
                 <TextView
@@ -86,7 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_fullname"
-                    android:text="Race"
+                    android:text="@string/race"
                     android:textStyle="bold" />
 
                 <TextView
@@ -100,7 +99,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_race"
-                    android:text="Gender"
+                    android:text="@string/gender"
                     android:textStyle="bold" />
 
                 <TextView
@@ -114,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_gender"
-                    android:text="Height"
+                    android:text="@string/height"
                     android:textStyle="bold" />
 
                 <TextView
@@ -128,7 +127,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_height"
-                    android:text="Weight"
+                    android:text="@string/weight"
                     android:textStyle="bold" />
 
                 <TextView
@@ -144,6 +143,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_biography"
+            style="@style/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/card_profile"
@@ -151,7 +151,6 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            app:cardCornerRadius="8dp"
             app:cardElevation="16dp">
 
             <RelativeLayout
@@ -166,7 +165,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="8dp"
-                    android:text="Biography"
+                    android:text="@string/biography"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -175,7 +174,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_biography"
-                    android:text="Aliases"
+                    android:text="@string/aliases"
                     android:textStyle="bold" />
 
                 <TextView
@@ -189,14 +188,28 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_aliases"
-                    android:text="Occupation"
+                    android:text="@string/place_of_birth"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/txt_occupation"
+                    android:id="@+id/txt_place_birth"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_aliases"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_place_birth"
+                    android:text="@string/alignment"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_alignment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_place_birth"
                     android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
@@ -205,12 +218,12 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_stats"
+            style="@style/cardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/card_biography"
             android:layout_centerVertical="true"
             android:layout_margin="16dp"
-            app:cardCornerRadius="8dp"
             app:cardElevation="16dp">
 
             <RelativeLayout
@@ -225,7 +238,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginBottom="8dp"
-                    android:text="Stats"
+                    android:text="@string/stats"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="18sp"
                     android:textStyle="bold" />
@@ -234,7 +247,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_stats"
-                    android:text="Intelligence"
+                    android:text="@string/intelligence"
                     android:textStyle="bold" />
 
                 <TextView
@@ -248,7 +261,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_intelligence"
-                    android:text="Strength"
+                    android:text="@string/strength"
                     android:textStyle="bold" />
 
                 <TextView
@@ -262,7 +275,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_strength"
-                    android:text="Speed"
+                    android:text="@string/speed"
                     android:textStyle="bold" />
 
                 <TextView
@@ -276,7 +289,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_speed"
-                    android:text="Durability"
+                    android:text="@string/durability"
                     android:textStyle="bold" />
 
                 <TextView
@@ -290,7 +303,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_durability"
-                    android:text="Power"
+                    android:text="@string/power"
                     android:textStyle="bold" />
 
                 <TextView
@@ -304,7 +317,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_power"
-                    android:text="Combat"
+                    android:text="@string/combat"
                     android:textStyle="bold" />
 
                 <TextView

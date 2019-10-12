@@ -4,8 +4,7 @@ data class DataState<T>(
     var message: Event<String>? = null,
     var loading: Boolean = false,
     var data: Event<T>? = null
-)
-{
+) {
     companion object {
 
         fun <T> error(

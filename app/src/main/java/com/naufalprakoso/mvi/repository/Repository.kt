@@ -21,7 +21,6 @@ object Repository {
             override fun createCall(): LiveData<GenericApiResponse<List<Character>>> {
                 return MyRetrofitBuilder.apiService.getAllCharacters()
             }
-
         }.asLiveData()
     }
 
@@ -35,35 +34,6 @@ object Repository {
             override fun createCall(): LiveData<GenericApiResponse<Character>> {
                 return MyRetrofitBuilder.apiService.getCharacter(characterId.toString())
             }
-
         }.asLiveData()
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -54,5 +54,4 @@ class MainViewModel : ViewModel() {
         val state: MainStateEvent = event
         _stateEvent.value = state
     }
-
 }

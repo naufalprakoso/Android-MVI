@@ -2,7 +2,11 @@ package com.naufalprakoso.mvi.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
-import com.naufalprakoso.mvi.utils.*
+import com.naufalprakoso.mvi.utils.DataState
+import com.naufalprakoso.mvi.utils.GenericApiResponse
+import com.naufalprakoso.mvi.utils.ApiSuccessResponse
+import com.naufalprakoso.mvi.utils.ApiEmptyResponse
+import com.naufalprakoso.mvi.utils.ApiErrorResponse
 import com.naufalprakoso.mvi.utils.Constants.Companion.TESTING_NETWORK_DELAY
 import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.Dispatchers.Main
@@ -48,7 +52,7 @@ abstract class NetworkBoundResource<ResponseObject, ViewStateType> {
         }
     }
 
-    fun onReturnError(message: String) {
+    private fun onReturnError(message: String) {
         result.value = DataState.error(message)
     }
 

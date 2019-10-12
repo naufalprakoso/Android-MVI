@@ -9,6 +9,7 @@ import com.naufalprakoso.mvi.R
 import com.naufalprakoso.mvi.ui.detail.state.DetailStateEvent
 import com.naufalprakoso.mvi.utils.Constants
 import kotlinx.android.synthetic.main.activity_character_detail.*
+import java.util.Locale
 
 class CharacterDetailActivity : AppCompatActivity() {
 
@@ -47,7 +48,8 @@ class CharacterDetailActivity : AppCompatActivity() {
                 txt_weight.text = it.appearance.weight[1]
 
                 txt_aliases.text = it.biography.aliases[0]
-                txt_occupation.text = it.work.occupation
+                txt_place_birth.text = it.biography.placeOfBirth
+                txt_alignment.text = it.biography.alignment.toUpperCase(Locale.getDefault())
 
                 txt_intelligence.text = it.powerstats.intelligence.toString()
                 txt_strength.text = it.powerstats.strength.toString()

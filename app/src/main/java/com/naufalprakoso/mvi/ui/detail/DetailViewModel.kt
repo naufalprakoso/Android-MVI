@@ -54,5 +54,4 @@ class DetailViewModel : ViewModel() {
         val state: DetailStateEvent = event
         _stateEvent.value = state
     }
-
 }

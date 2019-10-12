@@ -1,3 +1,20 @@
 <resources>
-    <string name="app_name">Superhero</string>
+    <string name="app_name">Superhero and Villain</string>
+    <string name="stats">Stats</string>
+    <string name="intelligence">Intelligence</string>
+    <string name="strength">Strength</string>
+    <string name="speed">Speed</string>
+    <string name="durability">Durability</string>
+    <string name="power">Power</string>
+    <string name="combat">Combat</string>
+    <string name="information">Information</string>
+    <string name="fullname">Fullname</string>
+    <string name="race">Race</string>
+    <string name="gender">Gender</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="biography">Biography</string>
+    <string name="aliases">Aliases</string>
+    <string name="place_of_birth">Place of Birth</string>
+    <string name="alignment">Alignment</string>
 </resources>

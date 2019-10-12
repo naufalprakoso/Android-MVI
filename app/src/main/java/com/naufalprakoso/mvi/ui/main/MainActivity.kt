@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        viewModel.setStateEvent(MainStateEvent.GetCharactersEvent())
+        viewModel.setStateEvent(MainStateEvent.GetCharactersEvent)
         subscribeObservers()
         initRecyclerView()
     }
