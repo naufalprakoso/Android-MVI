@@ -3,6 +3,7 @@ Superhero and Villain app using MVI Pattern on Android 🦸🏻‍♂️
 
 The app uses the following libraries / topics:
 - Kotlin
+- Ktlint
 - Coroutines
 - Retrofit2
 - Glide
