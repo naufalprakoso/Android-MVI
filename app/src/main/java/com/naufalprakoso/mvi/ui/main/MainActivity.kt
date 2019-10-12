@@ -1,12 +1,15 @@
 package com.naufalprakoso.mvi.ui.main
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import com.naufalprakoso.mvi.R
+import com.naufalprakoso.mvi.ui.detail.CharacterDetailActivity
 import com.naufalprakoso.mvi.ui.main.state.MainStateEvent
+import com.naufalprakoso.mvi.utils.Constants
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -29,7 +32,9 @@ class MainActivity : AppCompatActivity() {
         rv_characters.apply {
             layoutManager = GridLayoutManager(applicationContext, 2)
             characterAdapter = MainCharacterAdapter {
-
+                val intent = Intent(applicationContext, CharacterDetailActivity::class.java)
+                intent.putExtra(Constants.KEY_CHARACTER, it)
+                startActivity(intent)
             }
             adapter = characterAdapter
         }

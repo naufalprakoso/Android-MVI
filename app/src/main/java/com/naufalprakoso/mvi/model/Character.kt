@@ -1,5 +1,9 @@
 package com.naufalprakoso.mvi.model
 
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
 data class Character(
     var id: Int = 0,
     var name: String = "",
@@ -10,4 +14,4 @@ data class Character(
     var work: Work,
     var connections: Connections,
     var images: Images
-)
+) : Parcelable
