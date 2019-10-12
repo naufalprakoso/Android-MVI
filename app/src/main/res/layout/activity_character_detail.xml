@@ -28,7 +28,6 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:text="Gundala"
             android:textColor="@android:color/white"
             android:textSize="22sp"
             android:textStyle="bold" />
@@ -36,12 +35,11 @@
         <ImageView
             android:id="@+id/img_hero"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="250dp"
             android:layout_below="@+id/txt_name"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="16dp"
-            android:layout_marginBottom="16dp"
-            android:src="@drawable/sample" />
+            android:layout_marginBottom="16dp" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_profile"
@@ -82,8 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_information"
-                    android:layout_alignParentEnd="true"
-                    android:text="Fullname" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -97,8 +94,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_fullname"
-                    android:layout_alignParentEnd="true"
-                    android:text="Race" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -112,8 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_race"
-                    android:layout_alignParentEnd="true"
-                    android:text="Gender" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -127,8 +122,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_gender"
-                    android:layout_alignParentEnd="true"
-                    android:text="Height" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -142,8 +136,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_height"
-                    android:layout_alignParentEnd="true"
-                    android:text="Weight" />
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
 
@@ -190,28 +183,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_biography"
-                    android:layout_alignParentEnd="true"
-                    android:text="Aliases" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_aliases"
-                    android:text="First Appearance"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txt_first_appearance"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_aliases"
-                    android:layout_alignParentEnd="true"
-                    android:text="First Appearance" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_first_appearance"
                     android:text="Occupation"
                     android:textStyle="bold" />
 
@@ -219,24 +196,8 @@
                     android:id="@+id/txt_occupation"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_first_appearance"
-                    android:layout_alignParentEnd="true"
-                    android:text="Occupation" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_occupation"
-                    android:text="Group Affiliation"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/txt_group_affiliation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/txt_occupation"
-                    android:layout_alignParentEnd="true"
-                    android:text="Group Affiliation" />
+                    android:layout_below="@+id/txt_aliases"
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
 
@@ -281,8 +242,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_stats"
-                    android:layout_alignParentEnd="true"
-                    android:text="Intelligence" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -296,8 +256,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_intelligence"
-                    android:layout_alignParentEnd="true"
-                    android:text="Strength" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -311,8 +270,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_strength"
-                    android:layout_alignParentEnd="true"
-                    android:text="Speed" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -326,8 +284,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_speed"
-                    android:layout_alignParentEnd="true"
-                    android:text="Durability" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -341,8 +298,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_durability"
-                    android:layout_alignParentEnd="true"
-                    android:text="Power" />
+                    android:layout_alignParentEnd="true" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -356,8 +312,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/txt_power"
-                    android:layout_alignParentEnd="true"
-                    android:text="Combat" />
+                    android:layout_alignParentEnd="true" />
 
             </RelativeLayout>
 

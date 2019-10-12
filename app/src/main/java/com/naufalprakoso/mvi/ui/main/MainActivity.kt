@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
             layoutManager = GridLayoutManager(applicationContext, 2)
             characterAdapter = MainCharacterAdapter {
                 val intent = Intent(applicationContext, CharacterDetailActivity::class.java)
-                intent.putExtra(Constants.KEY_CHARACTER, it)
+                intent.putExtra(Constants.CHARACTER_ID, it)
                 startActivity(intent)
             }
             adapter = characterAdapter
@@ -46,9 +46,6 @@ class MainActivity : AppCompatActivity() {
                 event.getContentIfNotHandled()?.let { mainViewState ->
                     mainViewState.characters?.let {
                         viewModel.setCharacterListData(it)
-                    }
-                    mainViewState.character?.let {
-                        viewModel.setCharacter(it)
                     }
                 }
             }

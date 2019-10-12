@@ -4,10 +4,6 @@ sealed class MainStateEvent {
 
     class GetCharactersEvent: MainStateEvent()
 
-    class GetCharacterEvent(
-        val characterId: String
-    ): MainStateEvent()
-
     class None: MainStateEvent()
 
 }

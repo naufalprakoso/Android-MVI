@@ -10,7 +10,7 @@ import com.naufalprakoso.mvi.model.Character
 import kotlinx.android.synthetic.main.item_character.view.*
 
 class MainCharacterAdapter(
-    private val listener: (Character) -> Unit
+    private val listener: (Int) -> Unit
 ) : RecyclerView.Adapter<MainCharacterAdapter.ViewHolder>() {
 
     private val characters: ArrayList<Character> = arrayListOf()
@@ -38,14 +38,12 @@ class MainCharacterAdapter(
     }
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        fun bindItem(character: Character, listener: (Character) -> Unit) {
+        fun bindItem(character: Character, listener: (Int) -> Unit) {
             Glide.with(itemView.context).load(character.images.sm).into(itemView.img_hero)
             itemView.txt_name.text = character.name
             itemView.txt_race.text = character.appearance.race
 
-            itemView.setOnClickListener {
-                listener(character)
-            }
+            itemView.setOnClickListener { listener(character.id) }
         }
     }
 

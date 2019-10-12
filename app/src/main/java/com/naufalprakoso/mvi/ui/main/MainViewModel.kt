@@ -32,9 +32,6 @@ class MainViewModel : ViewModel() {
             is MainStateEvent.GetCharactersEvent -> {
                 Repository.getAllCharacters()
             }
-            is MainStateEvent.GetCharacterEvent -> {
-                Repository.getCharacter(stateEvent.characterId)
-            }
             is MainStateEvent.None -> {
                 AbsentLiveData.create()
             }
@@ -44,12 +41,6 @@ class MainViewModel : ViewModel() {
     fun setCharacterListData(characters: List<Character>) {
         val update = getCurrentViewStateOrNew()
         update.characters = characters
-        _viewState.value = update
-    }
-
-    fun setCharacter(character: Character) {
-        val update = getCurrentViewStateOrNew()
-        update.character = character
         _viewState.value = update
     }
 
